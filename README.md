@@ -4,25 +4,26 @@
 
 This is an example IJ plugin written in Scala and managed by SBT.
 
-Apart from basic IJ plugin structure this project also provides some example code to play with and demonstrate some IntelliJ platform API features.
+Apart from the basic IJ plugin structure, 
+this project also provides some example code to play with and demonstrates some IntelliJ platform API features.
 
-Extended documentation on the build features such as packaging the artifact, uploading to plugin marketplace, etc. is covered by
-the [sbt-idea-plugin](https://github.com/JetBrains/sbt-idea-plugin) readme
+Extended documentation on the build features such as packaging the artifact, uploading to a plugin marketplace, 
+etc. is covered by the [sbt-idea-plugin](https://github.com/JetBrains/sbt-idea-plugin) readme
 
 ## Quick Start
-
 - Open the `build.sbt` file in IntelliJ IDEA as a project
+- Install JDK 17 and set it in `File | Project Settings | Project | SDK`
 - To run your plugin, run or debug the `myAwesomeFramework` run configuration
 
 ## Example build features
 
-- `intellijBuild` key in build.sbt contains version of the dependency on IDEA, you can change it.
+- `intellijBuild` key in build.sbt contains the version of the dependency on IDEA, you can change it.
 
 - `intellijPlugins` key in build.sbt contains a dependency on the "Properties" IJ plugin
 
 - there's an external library dependency that will be packaged into your plugin distribution
 
-- Don't forget to replace the plugin name in build.sbt. You also need to change name in resources/META-INF/plugin.xml.
+- Don't forget to replace the plugin name in build.sbt. You also need to change the name in resources/META-INF/plugin.xml.
 
 ## Example plugin components
 
